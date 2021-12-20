@@ -1,0 +1,53 @@
+KNN ------->
+
+1)Calaculate euclidean distances between query point and all the datapoints
+2)Sort the by decreasing distance
+3)Take first k distances points
+4)Mode for classifier / Mean for regressor
+
+DTREE  -------->
+
+1)Split nodes based on gini impurity
+2)Split first where info gain is high
+3) en(s) S< -P(xi) * log( P(xi) )
+4) en(s,X) S< P(xi) *  en(xi)
+4) IG(s,x) = en(s) - en(s,x)
+
+MLP --------->
+
+1)Perceptron 
+2)Linearly separable
+
+Steps :
+1) S< xiwi - T > 0 ?1:0  T--->activation
+2) D(w,c) :  -S< yi (xiwi+c)  c-->bias
+
+
+Random Forest / Bagging --------->
+
+1)Make permutaions of Dtrees
+2)Each of them have equal vote 
+3)All of them are executed and most votes is the result
+
+AdaBoost ---------->
+
+1)Use stumps tree with 3 node
+2)First stump has lot of importance(crucial)
+3)Sequential
+4)Error in previous step are corrected again
+
+PCA --------------->
+
+1)Projects higher dimensions to a lower dimension
+2)variance in lower dimension should be high
+3)curse of dimensionality
+
+Steps --------- ::::
+1)Normalize
+2)Covariance matrix
+3)Eigen vectors and values
+4)Feature vector=[ req eigens ]
+5)Finaldata= fv ^ T * originaldata ^ T
+
+LDA -------------->
+
